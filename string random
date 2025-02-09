@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std ; 
+int main() {
+    string phrase = " welcome walaa !" ;
+    //in array queue 01234567 9.....  
+    //we can change the letters in array like this 
+    phrase[15] = '?' ; // ! will change to ? 
+    cout << phrase.length()  << endl ; 
+    cout << phrase << endl ; 
+    cout << phrase[10] << endl ; 
+ 
+}
