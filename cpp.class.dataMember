@@ -1,0 +1,30 @@
+#include <iostream> 
+using namespace std ;
+ 
+class Araba{
+    private : 
+    int hiz ;
+    
+public :
+//setter : değer atamak için 
+ void setHiz(int yeniHiz )
+ {if (yeniHiz >= 0 )
+{hiz = yeniHiz ; } 
+ } 
+ 
+ //getter : değerini geri almak için 
+ int getHiz () {
+     return hiz ; 
+     }
+ 
+} ; 
+
+ int main(){
+     Araba variable ; 
+     variable.setHiz(120); // hız ayarı 
+     cout << " arabanin hizi : " << variable.getHiz() ; // hiz yazdırıldı i
+     
+     return 0 ; 
+     
+     
+ } 
