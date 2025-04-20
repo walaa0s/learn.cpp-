@@ -1,0 +1,40 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std ; 
+ class Movie {
+     private : 
+    string title ; 
+    int year ; 
+    double rating ; 
+public : 
+void setInfo() ;     
+void getInfo() ; 
+
+ }; 
+
+void Movie::setInfo (){
+    cout << " enter the title  : "  <<endl ;
+        getline(cin, title ) ; 
+    cout << "enter the year : "  << endl ; 
+      cin>> year  ; 
+
+    cout << "enter the rating : "<< endl ; 
+cin>>rating ; 
+    
+}
+
+void Movie::getInfo() {
+    cout <<"the title your created : " <<title  <<endl ; 
+    cout <<"the year youre writed : " << year <<endl ; 
+    cout <<"the rating youre choosed : " << rating <<endl ; 
+
+    
+}
+
+int main() {
+   Movie fMovie ; 
+   fMovie.setInfo() ;
+   fMovie.getInfo() ; 
+   
+   return 0 ; 
+}
